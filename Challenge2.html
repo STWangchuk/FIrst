@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <title>Hexagons</title>
+        <style>
+            * {
+                margin:0;
+            }
+            div#mainbox {
+                width:800px;
+                height:1024px;
+                background-image:url("images/bg-1.png");
+                margin:0 auto;
+                position:relative;
+                background-size:cover;
+                overflow: hidden;
+            }
+            div#header {
+                text-align:left;
+                float:left;
+                margin-left:40px;
+                margin-top:40px;
+                margin-bottom:-20px;
+                color: rgba(202, 202, 202, 0.8);
+                font-family:Verdana;
+                font-weight:100;
+                
+            }
+            p#main {
+                font-size:72px;
+            }
+            p#title {
+                font-size:54px;
+            }
+            p#subtitle {
+                padding-bottom:60px;
+                box-sizing:border-box;
+                font-size:22px;
+            }
+            div#bottombox {
+                width:290px;
+                height:600px;
+                position:absolute;
+                top:580;
+                left:40;
+                color: rgba(202, 202, 202, 0.8);
+                font-family:Verdana;
+                font-weight:100;
+            }
+            p#downtitle{
+                font-size: 46px;
+            }
+            p.downtext {
+                font-size:17.5px;
+            }
+            div.hexagon:before {
+                content: "";
+                width: 0px;
+                position:absolute;
+                top:-120;
+                border-bottom: 120px solid yellow;
+                border-left: 208px solid transparent;
+                border-right: 208px solid transparent;
+                z-index:1;
+                
+            }
+            div.hexagon {
+                margin-top: 120px;
+                width: 416px;
+                height: 240px;
+                background-color: yellow;
+                position:absolute;
+                top: -30;
+                left: 480;
+                z-index:1;
+                transform: rotate(103deg);
+                padding-top:1px;
+                padding-bottom:1px;
+                box-sizing: border-box;
+                border-top:1px solid yellow;
+                border-bottom:1px solid yellow;
+            }
+            div.hexagon:after {
+                content: "";
+                width: 0px;
+                position:absolute;
+                bottom:-120;
+                border-top: 120px solid yellow;
+                border-left: 208px solid transparent;
+                border-right: 208px solid transparent;
+                z-index:1;
+            }      
+            div.hexes1:before {
+                content: "";
+                width: 0px;
+                position:absolute;
+                top:-90;
+                border-bottom: 90px solid rgba(188,188,188,1);
+                border-left: 156px solid transparent;
+                border-right: 156px solid transparent;
+                z-index:2;
+                
+            }
+            div.hexes1 {
+                margin-top: 90px;
+                width: 312px;
+                height: 180px;
+                background-color: rgba(188,188,188,1);
+                position:absolute;
+                top: 270;
+                left:300;
+                z-index:2;
+                transform: rotate(106deg);
+                padding-top:1px;
+                padding-bottom:1px;
+                box-sizing: border-box;
+                border-top:1px solid rgba(188,188,188,1);
+                border-bottom:1px solid rgba(188,188,188,1)
+            }
+            div.hexes1:after {
+                content: "";
+                width: 0px;
+                position:absolute;
+                bottom:-90;
+                border-top: 90px solid rgba(188,188,188,1);
+                border-left: 156px solid transparent;
+                border-right: 156px solid transparent;
+                z-index:2;
+                
+            }
+            div.hexes2:before {
+                content: "";
+                width: 0px;
+                position:absolute;
+                top:-80;
+                border-bottom: 80px solid rgba(188,188,188,1);
+                border-left: 139px solid transparent;
+                border-right: 139px solid transparent;
+                z-index:2;
+                
+            }
+            div.hexes2 {
+                margin-top: 80px;
+                width: 278px;
+                height: 160px;
+                background-color: rgba(188,188,188,1);
+                position:absolute;
+                top: 500;
+                left:580;
+                z-index:2;
+                transform: rotate(106deg);
+                padding-top:1px;
+                padding-bottom:1px;
+                box-sizing: border-box;
+                border-top:1px solid rgba(188,188,188,1);
+                border-bottom:1px solid rgba(188,188,188,1);
+            }
+            div.hexes2:after {
+                content: "";
+                width: 0px;
+                position:absolute;
+                bottom:-80;
+                border-top: 80px solid rgba(188,188,188,1);
+                border-left: 139px solid transparent;
+                border-right: 139px solid transparent;
+                z-index:2;
+                
+            }
+            div#imagetext1 {
+                position:absolute;
+                width:200px;
+                top:375;
+                left:360;
+                z-index:3;
+                font-size:27px;
+                text-align:center;
+                color:gray;
+            }
+            div#imagetext2 {
+                position:absolute;
+                width:200px;
+                top:605;
+                left:610;
+                z-index:3;
+                font-size:22px;
+                text-align:center;
+                color:gray;
+            }
+            
+        </style>
+        <!-- No CSS Zone -->
+    </head>
+    <body>
+        <div id="mainbox">
+            <div id="header">
+                <p id=main>HEADLINE</p>
+                <p id="title">SPACE   HERE </p>
+                <p id="subtitle">Then there's some text here</p>
+            </div>
+            <div id="bottombox">
+                <p id="downtitle">
+                    TITLE TEXT
+                </p>
+                <br/>
+                <p class="downtext">
+                    Here we shall have  a repeated string of unnecessary text for the sole purpose of filling space. Here we shall have  a repeated string of unnecessary text for the sole purpose of filling space.Here we shall have a repeated string of unnecessary text for the sole purpose of filling space. Here we shall have  a repeated string of unnecessary text for the sole purpose of filling space.
+                </p>
+                <br/>
+                <p class="downtext">
+                    <i>Here we shall have  a repeated string of unnecessary text for the sole purpose of filling space.</i>
+                </p>
+            </div>
+            <div class="hexagon"> 
+            </div>
+            <div class="hexes1">
+            </div>
+            <div class="hexes2">
+            </div>
+            <div id="imagetext1">
+                <h1>YOUR IMAGE</h1>
+            </div>
+            <div id="imagetext2">
+                <h1>YOUR IMAGE</h1>
+            </div>
+        </div>
+    </body>
+</html>
